@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hanye - Produits Naturels de la Ruche | Miel, Propolis &amp; Pollen</title>
+  <meta name="description" content="Découvrez les trésors purs de la ruche Hanye : miel naturel, propolis brute et pollen d'abeille frais. Produits naturels récoltés avec passion, de la ruche à votre table.">
+  <meta name="theme-color" content="#E8A317">
+  
+  <!-- Polices Google Fonts (avec polices système de secours) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- EN-TÊTE FIXE -->
+  <header class="site-header" id="header">
+    <div class="header-container">
+      <a href="#accueil" class="brand" aria-label="Hanye - Accueil">
+        <span class="brand-icon" aria-hidden="true">🐝</span>
+        <span class="brand-name">Hanye</span>
+      </a>
+
+      <!-- Sélecteur de langue -->
+      <div class="lang-switcher" role="group" aria-label="Sélecteur de langue">
+        <button type="button" class="lang-btn" data-lang="ar" aria-label="العربية">AR</button>
+        <button type="button" class="lang-btn active" data-lang="fr" aria-label="Français">FR</button>
+        <button type="button" class="lang-btn" data-lang="en" aria-label="English">EN</button>
+      </div>
+
+      <!-- Navigation principale -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Menu principal">
+        <ul class="nav-list">
+          <li><a href="#accueil" class="nav-link" data-i18n="nav_home">Accueil</a></li>
+          <li><a href="#produits" class="nav-link" data-i18n="nav_products">Produits</a></li>
+          <li><a href="#a-propos" class="nav-link" data-i18n="nav_about">À propos</a></li>
+          <li><a href="#pourquoi-nous" class="nav-link" data-i18n="nav_why">Pourquoi nous</a></li>
+          <li><a href="#contact" class="nav-link" data-i18n="nav_contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Bouton Menu Burger pour Mobile -->
+      <button type="button" class="burger-btn" id="burger-btn" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-menu">
+        <span class="burger-bar"></span>
+        <span class="burger-bar"></span>
+        <span class="burger-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- SECTION ACCUEIL (HERO) -->
+    <section class="hero-section" id="accueil">
+      <div class="hero-container">
+        <div class="hero-badge" data-i18n="hero_badge">🍯 100% Naturel &amp; Artisanal</div>
+        <h1 class="hero-title" data-i18n="hero_title">La pureté de la ruche, directement à votre table</h1>
+        <p class="hero-description" data-i18n="hero_desc">
+          Découvrez notre miel pur, notre propolis brute et notre pollen frais, récoltés avec passion dans le plus grand respect des abeilles et de la nature.
+        </p>
+        
+        <div class="hero-actions">
+          <a href="https://wa.me/213666830962" class="btn btn-primary btn-hero" id="hero-wa-btn" target="_blank" rel="noopener noreferrer">
+            <span class="btn-icon" aria-hidden="true">💬</span>
+            <span data-i18n="hero_cta">Commander sur WhatsApp</span>
+          </a>
+        </div>
+
+        <div class="hero-chips">
+          <span class="chip"><span>🍯</span> <strong data-i18n="chip_honey">Miel pur</strong></span>
+          <span class="chip"><span>🐝</span> <strong data-i18n="chip_propolis">Propolis brute</strong></span>
+          <span class="chip"><span>🌼</span> <strong data-i18n="chip_pollen">Pollen frais</strong></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION PRODUITS -->
+    <section class="products-section" id="produits">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-subtitle" data-i18n="products_tag">Nos Trésors</span>
+          <h2 class="section-title" data-i18n="products_title">Nos Produits de la Ruche</h2>
+          <p class="section-intro" data-i18n="products_intro">
+            Des produits authentiques et non transformés, issus directement de nos ruches pour préserver toute leur richesse naturelle.
+          </p>
+        </div>
+
+        <div class="products-grid">
+          <!-- Carte 1 : Miel -->
+          <article class="product-card">
+            <div class="product-visual">
+              <span class="product-emoji" role="img" aria-label="Miel">🍯</span>
+            </div>
+            <div class="product-content">
+              <h3 class="product-name" data-i18n="prod_miel_name">Miel Naturel</h3>
+              <p class="product-desc" data-i18n="prod_miel_desc">
+                Un miel doré aux arômes floraux délicats, récolté à maturité selon les traditions apicoles pour préserver sa douceur et sa pureté.
+              </p>
+              <div class="product-footer">
+                <span class="product-price" id="price-miel">1500 DA</span>
+                <a href="#" class="btn btn-order" data-product="miel" target="_blank" rel="noopener noreferrer">
+                  <span class="btn-icon" aria-hidden="true">💬</span>
+                  <span data-i18n="btn_order">Commander</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Carte 2 : Propolis -->
+          <article class="product-card">
+            <div class="product-visual">
+              <span class="product-emoji" role="img" aria-label="Propolis">🐝</span>
+            </div>
+            <div class="product-content">
+              <h3 class="product-name" data-i18n="prod_propolis_name">Propolis Brute</h3>
+              <p class="product-desc" data-i18n="prod_propolis_desc">
+                La résine protectrice végétale collectée et enrichie par les abeilles, récoltée à l'état brut pour vous offrir toute l'authenticité de la ruche.
+              </p>
+              <div class="product-footer">
+                <span class="product-price" id="price-propolis">2000 DA</span>
+                <a href="#" class="btn btn-order" data-product="propolis" target="_blank" rel="noopener noreferrer">
+                  <span class="btn-icon" aria-hidden="true">💬</span>
+                  <span data-i18n="btn_order">Commander</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Carte 3 : Pollen d'abeille -->
+          <article class="product-card">
+            <div class="product-visual">
+              <span class="product-emoji" role="img" aria-label="Pollen d'abeille">🌼</span>
+            </div>
+            <div class="product-content">
+              <h3 class="product-name" data-i18n="prod_pollen_name">Pollen d'Abeille</h3>
+              <p class="product-desc" data-i18n="prod_pollen_desc">
+                De fines pelotes dorées de pollen floral frais récoltées par les butineuses. Une source authentique de vitalité végétale issue des fleurs sauvages.
+              </p>
+              <div class="product-footer">
+                <span class="product-price" id="price-pollen">1200 DA</span>
+                <a href="#" class="btn btn-order" data-product="pollen" target="_blank" rel="noopener noreferrer">
+                  <span class="btn-icon" aria-hidden="true">💬</span>
+                  <span data-i18n="btn_order">Commander</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION À PROPOS -->
+    <section class="about-section" id="a-propos">
+      <div class="section-container">
+        <div class="about-card">
+          <div class="about-photo-col">
+            <div class="photo-wrapper">
+              <img src="photo.png" alt="Apiculteur Hanye avec ses produits naturels" class="profile-photo" data-i18n-alt="about_photo_alt">
+            </div>
+          </div>
+          <div class="about-text-col">
+            <span class="section-subtitle" data-i18n="about_tag">Notre Passion</span>
+            <h2 class="section-title" data-i18n="about_title">À Propos de Hanye</h2>
+            <p class="about-paragraph" data-i18n="about_text_1">
+              Apiculteur passionné par le monde fascinant des abeilles, je veille chaque jour sur nos ruchers avec respect, rigueur et bienveillance.
+            </p>
+            <p class="about-paragraph" data-i18n="about_text_2">
+              Chez Hanye, notre philosophie est claire : respecter le rythme naturel des colonies et proposer des produits d'une pureté irréprochable, sans additifs, sans conservateurs et sans transformation industrielle. De la ruche à votre table, vous savourez l'essence même de la nature.
+            </p>
+            <div class="about-values">
+              <div class="value-item">
+                <span class="value-icon">🌾</span>
+                <span class="value-text" data-i18n="val_1">100% Artisanal</span>
+              </div>
+              <div class="value-item">
+                <span class="value-icon">✨</span>
+                <span class="value-text" data-i18n="val_2">Zéro Additif</span>
+              </div>
+              <div class="value-item">
+                <span class="value-icon">🐝</span>
+                <span class="value-text" data-i18n="val_3">Respect du Ruché</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION POURQUOI NOUS CHOISIR -->
+    <section class="why-section" id="pourquoi-nous">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-subtitle" data-i18n="why_tag">Nos Engagements</span>
+          <h2 class="section-title" data-i18n="why_title">Pourquoi Nous Choisir ?</h2>
+          <p class="section-intro" data-i18n="why_intro">
+            Des principes fermes et transparents pour vous garantir les meilleurs produits de la ruche.
+          </p>
+        </div>
+
+        <div class="why-grid">
+          <div class="why-card">
+            <div class="why-icon" aria-hidden="true">🌱</div>
+            <h3 class="why-name" data-i18n="why_1_title">100% Naturel</h3>
+            <p class="why-desc" data-i18n="why_1_desc">
+              Tous nos produits sont bruts, purs et authentiques, sans ajout de sucres, sans colorants ni conservateurs.
+            </p>
+          </div>
+
+          <div class="why-card">
+            <div class="why-icon" aria-hidden="true">⭐</div>
+            <h3 class="why-name" data-i18n="why_2_title">Qualité &amp; Respect</h3>
+            <p class="why-desc" data-i18n="why_2_desc">
+              Une récolte artisanale soignée qui préserve la santé des abeilles et garantit des arômes floraux incomparables.
+            </p>
+          </div>
+
+          <div class="why-card">
+            <div class="why-icon" aria-hidden="true">🚚</div>
+            <h3 class="why-name" data-i18n="why_3_title">Livraison Possible</h3>
+            <p class="why-desc" data-i18n="why_3_desc">
+              Commandez en quelques clics et recevez vos produits rapidement dans un emballage sécurisé et soigné.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION CONTACT -->
+    <section class="contact-section" id="contact">
+      <div class="section-container">
+        <div class="contact-box">
+          <span class="section-subtitle" data-i18n="contact_tag">Échangeons</span>
+          <h2 class="section-title" data-i18n="contact_title">Contactez-nous</h2>
+          <p class="section-intro" data-i18n="contact_intro">
+            Une question sur nos produits ou une commande à passer ? Nous sommes à votre entière écoute pour vous conseiller.
+          </p>
+
+          <div class="contact-phone-display">
+            <span class="phone-label" data-i18n="contact_phone_label">Téléphone :</span>
+            <a href="tel:0666830962" class="phone-number">0666830962</a>
+          </div>
+
+          <div class="contact-buttons">
+            <a href="tel:0666830962" class="btn btn-call">
+              <span class="btn-icon" aria-hidden="true">📞</span>
+              <span data-i18n="btn_call">Appeler</span>
+            </a>
+            <a href="https://wa.me/213666830962" class="btn btn-whatsapp" id="contact-wa-btn" target="_blank" rel="noopener noreferrer">
+              <span class="btn-icon" aria-hidden="true">💬</span>
+              <span data-i18n="btn_whatsapp">WhatsApp</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- BOUTONS FLOTTANTS FIXES EN BAS -->
+  <aside class="floating-bar" aria-label="Actions rapides fixes">
+    <a href="tel:0666830962" class="fab-btn fab-call" aria-label="Appeler 0666830962">
+      <span class="fab-icon" aria-hidden="true">📞</span>
+      <span class="fab-text" data-i18n="fab_call">Appeler</span>
+    </a>
+    <a href="https://wa.me/213666830962" class="fab-btn fab-wa" id="fab-wa-btn" target="_blank" rel="noopener noreferrer" aria-label="Contacter sur WhatsApp">
+      <span class="fab-icon" aria-hidden="true">💬</span>
+      <span class="fab-text" data-i18n="fab_wa">WhatsApp</span>
+    </a>
+  </aside>
+
+  <!-- PIED DE PAGE -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <span class="brand-icon" aria-hidden="true">🐝</span>
+        <span class="brand-name">Hanye</span>
+      </div>
+      <p class="copyright" data-i18n="footer_copy">© Hanye. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
